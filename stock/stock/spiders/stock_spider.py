@@ -10,7 +10,7 @@
 import scrapy
 from scrapy.selector import Selector
 from stock.items import StockItem
-import logging
+import datetime
 
 class StockSpider(scrapy.Spider):
 
@@ -20,8 +20,9 @@ class StockSpider(scrapy.Spider):
 
     def parse(self,response):
         
-        
-        f = open("log.csv","w")
+        td = datetime.date.today().strftime('%Y%m%d')
+        f = open("holding_data/"+td+".csv","w")
+	f.write("stock_id ;stock_name; holding_num; holding_perc \n")
         for sel in response.xpath("//tr").extract():
             
             item = StockItem() 
