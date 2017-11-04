@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 # File Name: run.py
 # Author: Changsheng Zhang
 # mail: zhangcsxx@gmail.com
@@ -26,9 +27,9 @@ def format_data():
                 stock_num = stock_num + ii
             
             if flag == 0:
-                f.write("date;holding_num;holding_perc\n")
+                f.write("date,holding_num,holding_perc\n")
 
-            f.write(name.split(".")[0]+";"+stock_num+";"+line[3]+"\n")
+            f.write(name.split(".")[0]+","+stock_num.strip(" ")+","+line[3].strip(" "))
 
         flag = 1
 

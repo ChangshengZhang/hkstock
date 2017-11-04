@@ -713,3 +713,39 @@
  'scheduler/enqueued/memory': 1,
  'start_time': datetime.datetime(2017, 11, 4, 1, 59, 18, 655523)}
 2017-11-04 01:59:22 [scrapy.core.engine] INFO: Spider closed (finished)
+Traceback (most recent call last):
+  File "/usr/local/bin/scrapy", line 11, in <module>
+    sys.exit(execute())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/cmdline.py", line 109, in execute
+    settings = get_project_settings()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/project.py", line 68, in get_project_settings
+    settings.setmodule(settings_module_path, priority='project')
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/settings/__init__.py", line 292, in setmodule
+    module = import_module(module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named stock.settings
+Traceback (most recent call last):
+  File "/usr/local/bin/scrapy", line 11, in <module>
+    sys.exit(execute())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/cmdline.py", line 109, in execute
+    settings = get_project_settings()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/project.py", line 68, in get_project_settings
+    settings.setmodule(settings_module_path, priority='project')
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/settings/__init__.py", line 292, in setmodule
+    module = import_module(module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named stock.settings
+Traceback (most recent call last):
+  File "/usr/local/bin/scrapy", line 11, in <module>
+    sys.exit(execute())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/cmdline.py", line 109, in execute
+    settings = get_project_settings()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/project.py", line 68, in get_project_settings
+    settings.setmodule(settings_module_path, priority='project')
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/settings/__init__.py", line 292, in setmodule
+    module = import_module(module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named stock.settings
